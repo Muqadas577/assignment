@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(243, 216, 221);
+        }
+
+        #h1 {
+            color: rgba(211, 48, 102, 0.938);
+            font-weight: 600;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #h2 {
+            color: rgb(224, 76, 126);
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        #header {
+            background: rgb(241, 158, 186);
+            margin: 40px;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .Nav {
+            display: flex;
+            gap: 15px;
+            padding: 10px;
+            justify-content: center;
+        }
+
+        .Nav li {
+            list-style-type: none;
+            font-size: larger;
+        }
+
+        .Nav li a {
+            display: block;
+            background-color: rgb(211, 48, 102);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .logo {
+            color: white;
+            background-color: rgb(211, 48, 102);
+            margin: 40px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .img {
+            height: 200px;
+            width: 150px;
+            margin-left: 40px;
+            border-radius: 20px;
+            border: 5px solid rgb(211, 48, 102);
+        }
+
+        .intro,
+        .about,
+        .skills,
+        .project,
+        .Education,
+        .hobbies,
+        .contact-heading {
+            color: white;
+            background-color: rgb(211, 48, 102);
+            margin: 40px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .div,
+        .aboutdiv {
+            margin: 40px;
+            font-size: larger;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid rgb(211, 48, 102);
+            margin: 40px;
+        }
+
+        /* Skills Table */
+
+        .table {
+            margin: 40px;
+            margin-bottom: 30px;
+        }
+
+        .table table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .table td {
+            border: 1px solid rgb(211, 48, 102);
+            padding: 12px;
+        }
+
+        .one {
+            background-color: rgba(211, 48, 102, 0.938);
+            color: white;
+        }
+
+        /* Projects */
+
+        .p-1,
+        .p-2,
+        .p-3 {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        .project-1,
+        .project-2,
+        .project-3 {
+            color: rgba(211, 48, 102, 0.938);
+            font-weight: 600;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+
+        /* Education Table */
+
+        .education-table {
+            margin: 40px;
+            border-collapse: collapse;
+            width: calc(100% - 80px);
+            background-color: white;
+        }
+
+        .education-table th {
+            background-color: rgb(211, 48, 102);
+            color: white;
+            padding: 12px;
+            border: 1px solid rgb(211, 48, 102);
+        }
+
+        .education-table td {
+            border: 1px solid palevioletred;
+            padding: 12px;
+        }
+
+        /* Hobbies */
+
+        .div2 {
+            background-color: white;
+            border: 1px solid palevioletred;
+            padding: 30px;
+            margin: 10px 40px;
+            border-radius: 10px;
+        }
+
+        /* Contact */
+
+        .contact {
+            background-color: white;
+            margin: 40px;
+            padding: 20px;
+            border: 2px solid rgb(211, 48, 102);
+            border-radius: 15px;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact input[type="tel"] {
+            padding: 8px;
+            border: 1px solid palevioletred;
+            border-radius: 5px;
+        }
+
+        .contact input[type="submit"] {
+            background-color: rgb(211, 48, 102);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+
+        .footer {
+            background-color: rgb(241, 158, 186);
+            margin: 40px;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .footer h2 {
+            color: white;
+            background-color: rgb(211, 48, 102);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+
+    <div id="header">
+
+        <h1 id="h1">🌸MUQADDAS🌸</h1>
+
+        <h2 id="h2">My Personal Portfolio</h2>
+
+        <ul class="Nav">
+
+            <li><a href="#About">About</a></li>
+
+            <li><a href="#Skill">Skills</a></li>
+
+            <li><a href="#Project">Projects</a></li>
+
+            <li><a href="#Education">Education</a></li>
+
+            <li><a href="#Hobbies">Hobbies</a></li>
+
+            <li><a href="#Contact">Contact</a></li>
+
+        </ul>
+
+        <hr>
+
+    </div>
+
+
+    <!-- Profile -->
+
+    <h2 class="logo">My Profile Picture 👇</h2>
+
+    <img class="img" src="images.jpg" alt="Muqaddas Profile Picture">
+
+    <hr>
+
+
+    <!-- Introduction -->
+
+    <h2 class="intro">Hey, I'm Muqaddas 👋</h2>
+
+    <div class="div">
+
+        <h3>🌐 Web & Office Applications Specialist</h3>
+
+        <p>
+            Welcome to my personal portfolio website.
+            <br><br>
+            I love creating beautiful websites and learning new technologies.
+        </p>
+
+    </div>
+
+    <hr>
+
+
+    <!-- About -->
+
+    <h2 class="about" id="About">🌷About Me</h2>
+
+    <div class="aboutdiv">
+
+        <p>
+
+            Hey! My name is Muqaddas.
+
+            <br><br>
+
+            🌐 Web & Office Applications Specialist
+
+            <br><br>
+
+            Skilled in HTML, Microsoft Word, Microsoft Excel,
+            and Microsoft PowerPoint.
+
+            <br><br>
+
+            I love learning new technologies and improving my
+            skills day by day.
+
+        </p>
+
+    </div>
+
+    <hr>
+
+
+    <!-- Skills -->
+
+    <h2 class="skills" id="Skill">💻My Skills</h2>
+
+    <div class="table">
+
+        <table border="3px">
+
+            <tr class="one">
+
+                <td style="font-weight: 700;">Skill</td>
+
+                <td style="font-weight: 700;">What Can I Do</td>
+
+                <td style="font-weight: 700;">Level</td>
+
+            </tr>
+
+            <tr>
+
+                <td>🌐HTML</td>
+
+                <td>Create and structure website pages</td>
+
+                <td>⭐⭐⭐</td>
+
+            </tr>
+
+            <tr>
+
+                <td>📝MS WORD</td>
+
+                <td>Create documents and letters etc.</td>
+
+                <td>⭐⭐⭐⭐⭐</td>
+
+            </tr>
+
+            <tr>
+
+                <td>📊MS EXCEL</td>
+
+                <td>Create spreadsheets and visual content</td>
+
+                <td>⭐⭐⭐⭐</td>
+
+            </tr>
+
+            <tr>
+
+                <td>📽POWERPOINT</td>
+
+                <td>Create presentations and slides</td>
+
+                <td>⭐⭐⭐</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <hr>
+
+
+    <!-- Projects -->
+
+    <h2 class="project" id="Project">🚀My Projects</h2>
+
+    <div class="p-1">
+
+        <h3 class="project-1">
+            📄Project 1 - Personal Portfolio
+        </h3>
+
+        <p>
+            A personal portfolio website using HTML.
+            It contains information about me, my skills and my projects.
+        </p>
+
+    </div>
+
+
+    <div class="p-2">
+
+        <h3 class="project-2">
+            📝Project 2 - Professional Documents
+        </h3>
+
+        <p>
+            I created professional documents using Microsoft Word
+            and also assignments.
+        </p>
+
+    </div>
+
+
+    <div class="p-3">
+
+        <h3 class="project-3">
+            📊Project 3 - Students Result Sheet
+        </h3>
+
+        <p>
+            I created a student result sheet using Microsoft Excel.
+        </p>
+
+    </div>
+
+    <hr>
+
+
+    <!-- Education -->
+
+    <h2 class="Education" id="Education">
+        📚My Education
+    </h2>
+
+    <table class="education-table">
+
+        <tr>
+
+            <th>Qualification</th>
+
+            <th>Institute</th>
+
+            <th>Year</th>
+
+        </tr>
+
+        <tr>
+
+            <td>School</td>
+
+            <td>G.H.S. School</td>
+
+            <td>2025</td>
+
+        </tr>
+
+        <tr>
+
+            <td>College Continue</td>
+
+            <td>Sir Syed College</td>
+
+            <td>2027</td>
+
+        </tr>
+
+    </table>
+
+    <hr>
+
+
+    <!-- Hobbies -->
+
+    <h2 class="hobbies" id="Hobbies">
+        🌸My Hobbies
+    </h2>
+
+    <div class="div2">
+
+        <ul>
+
+            <li>💻Coding</li>
+
+            <li>🍕Cooking</li>
+
+            <li>📕Reading Books</li>
+
+            <li>🖋Writing</li>
+
+            <li>📷Photography</li>
+
+            <li>🌍Exploring New Places</li>
+
+        </ul>
+
+    </div>
+
+    <hr>
+
+
+    <!-- Contact Heading -->
+
+    <h2 class="contact-heading" id="Contact">
+        📞Contact
+    </h2>
+
+
+    <!-- Contact Form -->
+
+    <form class="contact">
+
+        <h3>📩Contact Us</h3>
+
+        <p>
+            Have a question or want to work with me?
+            Send me a message.
+        </p>
+
+
+        <label>First Name</label>
+
+        <br>
+
+        <input type="text" name="First_name" required>
+
+        <br><br>
+
+
+        <label>Email</label>
+
+        <br>
+
+        <input type="email" name="Email" required>
+
+        <br><br>
+
+
+        <label>Contact Me</label>
+
+        <br>
+
+        <input type="tel" name="phone">
+
+        <br><br>
+
+
+        <label>Subject</label>
+
+        <br>
+
+        <input type="text" name="subject">
+
+        <br><br>
+
+
+        <label>Gender</label>
+
+        <br>
+
+        <input type="radio" name="Gender" id="m" value="M">
+
+        <label for="m">Male</label>
+
+
+        <input type="radio" name="Gender" id="f" value="F">
+
+        <label for="f">Female</label>
+
+        <br><br>
+
+
+        <input type="submit" value="Send Message">
+
+    </form>
+
+    <hr>
+
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        <h2>🌸Muqaddas🌸</h2>
+
+        <p>🌐 Web | Office Applications Specialist</p>
+
+        <p>📩 Email: Office123@Gmail.com</p>
+
+        <p>📞 Phone: +92XXXXXXXXX</p>
+
+        <p>📍 Pakistan</p>
+
+    </div>
+
+</body>
+
+</html>
